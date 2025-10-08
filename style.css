@@ -1,0 +1,92 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px 10px;
+}
+header h1 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #00bcd4;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+section h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.skill {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+.skill:hover {
+    transform: scale(1.1);
+    background-color: #00bcd4;
+    color: white;
+}
+
+/* Contact */
+#contact a {
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+}
+#contact a:hover {
+    color: #00bcd4;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+    header nav a {
+        display: block;
+        margin: 8px 0;
+    }
+    .skills-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
